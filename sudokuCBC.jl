@@ -6,7 +6,7 @@ input = ARGS[1]
 
 hints = zeros(Int, 9, 9)
 for i = 1:9, j = 1:9
-  hints[i, j] = parse(Int, input[(j-1)*9 + i])
+  hints[i, j] = parse(Int, input[(i-1)*9 + j])
 end
 
 solution = ""
